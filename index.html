@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Web</title>
+    <link rel="icon" href="icon/iconoalejos.ico">
+    <!-- Incluimos Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <title>Proyecto Pizzas AG</title>
+   
+</head>
+
+<body>
+
+    <header>
+        <img src="img/Logo-Alejos2.jpg" width="150px" alt="Logo Pizza">
+        
+    <nav> <!-- Inicio de Nav  -->
+     <p>
+        <a href="#index.html">Inicio</a>
+        <a href="index.html#pizzas">Pizzas</a>
+        <a href="index.html#empanadas-lista">Empanadas</a>
+        <a href="index.html#Local">Local</a>
+        <a href="index.html#formularioConsulta">Contacto</a>
+     </p>    
+     
+    </nav>
+    </header>
+              <!-- Inicio Imagen  -->
+    <section>
+        <h1>Bienvenidos Alejos Pizzas</h1>
+        <img src="./img/Imagen Pizza principal.jpg"width="300px" alt="">
+    </section>
+            <!-- Seccion Pizzas  -->
+    <section>
+        <h1>Elegi tu Pizza </h1>
+        <div class="pizzas" id="pizzas">
+            <div class="pizzas-sabores" data-pizza="Pizza Americana">
+                <span>Pizza americana</span>
+                <img src="./img/Americana.jpg" width="100px" alt="Pizza Americana">
+            <div class="pizzas-sabores"data-pizza="Pizza Rucula y Jamon Crudo">
+                <span>Pizza Rucula y jamon Crudo</span>
+                <img src="./img/RuculaJamonCrudo.jpg" width="100px" alt="Pizza rucula y jamon crudo">
+            </div>   
+            <div class="pizzas-sabores" data-pizza="Pizza de champiñon">
+                <span>Pizza de champiñon</span>
+                <img src="./img/HongosParmesano.jpg" width="100px" alt="Pizza de champiñon">
+            </div> 
+            <div class="pizzas-sabores" data-pizza="Pizza calabresa">
+                <span>Pizza calabresa</span>
+                <img src="./img/calabresa.jpg" width="100px" alt="">
+            </div>
+            <div class="pizzas-sabores" data-pizza="Pizza Margarita">
+                <span>Pizza Margarita</span>
+                <img src="./img/muzzarella.jpg" width="100px" alt="Pizza Margarita">
+
+            </div>
+            </div>
+            <br><br>
+            
+        </div>
+         <!--Listado de empanadas-->               
+        <section>
+            <h1>Elegí tus empanadas</h1>
+            <img src="./img/Empanadas-lista.jpg" width="150px" alt="empanadas-lista">
+            <ul class="empanadas-lista" id="empanadas-lista">
+                
+                <li>Carne</li>
+                <li>Carne Picante</li>
+                <li>Cebolla y Queso</li>
+                <li>Humita</li>
+                <li>Jamón Y Queso</li>
+                <li>Pollo</li>
+                <li>Verdura</li>
+                <li>Mediterranea</li>
+                <li>Carne Cortada a Cuchillo</li>
+                <li>Bondiola BBQ</li>
+                <li>Cheeseburger</li>
+
+            </ul>
+        </section>
+    </section>    
+             <!-- Inicio de video  -->
+<section>
+    <h1>Descubre Nuestro Proceso de Creación de Pizzas</h1>
+    <video src="./video/videoplayback.mp4" muted autoplay loop></video>
+</section>
+ <!-- Formulario de consulta -->
+<section>
+           
+<h2>Envianos tu consulta</h2>
+<form action="show_data.html" method="post" id="formularioConsulta">
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <label for="firstame">Nombre: </label>
+        <input size="30" type="text"name="firstame"id="firstame" placeholder="Ingrese su nombre" required>
+        <label for="lastname">Apellido: </label>
+        <input size="30" type="text" name="lastname"id="lastname" placeholder="Ingrese su apellido aqui" required>
+        <br><br>
+        <label for="Email">Email</label>
+        <input type="Email" name="Email" id="Email" placeholder="Ingrese su email">
+        <label for="celular">Celular </label>
+        <input size="25" type="text" name="telefono"  placeholder="Ingrese su numero de celular">
+        <br><br>
+        <label for="BirthDate">Fecha de Nacimiento</label>
+        <input type="date" name="BirthDate">
+        <p>
+            <h3>Sexo</h3>
+            <input type="radio" name="gender" value="Hombre" checked>Hombre
+            <input type="radio" name="gender" value="Mujer">Mujer
+            <input type="radio" name="gender" value="Otro">Otro
+        </p>
+        <h3>Como llegaste a nosotros:</h3>
+         <form action="submit" method="post"></form>
+            <label for="red social">Red social</label>
+            <select id="red social" name="red social">
+             <option value="instagram">instagram</option>
+             <option value="facebook">facebook</option>
+             <option value="Web">web</option>
+            </select><br><br>
+        <h3>Contanos cuales son tus pizzas preferidas</h3>
+           <form action="/submit" method="post"></form> 
+           <label for="sabores">Pizzas:</label>
+           <select id="sabores" name="sabores" multiple>
+            <option value="Muzzarela">Muzzarela</option>
+            <option value="Napolitana">Napolitana</option>
+            <option value="Fugazzeta">Fugazzeta</option>
+            <option value="Jamon">Jamon</option>
+            <option value="JamonYmorron">Jamon y Morron</option>
+            <option value="Calabreza">Calabreza</option>
+            <option value="Rucula">Rucula</option>
+            <option value="Provolone">Provolone</option>
+            <option value="Americana">Americana</option>
+            <option value="CuatroQuesos">Cuatro Cuatro Quesos</option>
+           </select><br><br>
+
+        <h3>Ingrese su mensaje</h3>    
+        <label for="comentarios">Comentarios:</label>
+        <textarea name="comentarios" id="comentarios" rows="5" cols="30"></textarea>
+        <br><br> 
+        <input type="submit" value="Enviar">
+    <button type="reset">Reset</button>   
+    </fieldset>
+    
+</form>
+</section>
+<!--Seccion ubicacion local-->
+<section id="Local"> 
+    <h2>Conocé  nuestro local</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.601295809455!2d-58.36900462452157!3d-34.664770760724636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3334dda2dca4d%3A0xe40aa6ef2fe93f6c!2sElectricidad%20Alsina%20S.A.!5e0!3m2!1ses-419!2sar!4v1727875989585!5m2!1ses-419!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+ <!-- footer de la pagina -->
+<footer>
+    <h4>Datos de Contacto footer</h4>
+    <div class="networkSocial">
+        <a href=""i class="fa-brands fa-instagram"></a>
+        <a href=""i class="fa-brands fa-facebook"></a>
+        <a href=""i class="fa-brands fa-linkedin"></a>
+        <a href=""i class="fa-brands fa-instagram"></a>
+    </div>
+    <div class="copyright">
+        <h6><i class="fa-solid fa-copyright">Todos los derechos reservados</i></h6>
+    </div>
+</footer>
+</body>
+</html>
+
+
